@@ -21,6 +21,7 @@ public class ProdcutServiceApplication {
                     Product
                             .builder()
                             .name("Laptop")
+                            .price(15000.0)
                             .description("This is a description for laptop product")
                             .build()
             );
@@ -29,6 +30,7 @@ public class ProdcutServiceApplication {
                     Product
                             .builder()
                             .name("Camera")
+                            .price(6000.0)
                             .description("This is a description for camera product")
                             .build()
             );
