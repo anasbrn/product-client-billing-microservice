@@ -6,7 +6,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(value = "customer-servicer")
+@FeignClient(value = "customer-service")
 public interface CustomerServiceRestClient {
     @GetMapping("/customers/{id}")
     @CircuitBreaker(name = "customer-service", fallbackMethod = "getDefaultCustomer")
