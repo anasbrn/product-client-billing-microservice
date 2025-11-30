@@ -1,6 +1,6 @@
-package org.ecom.prodcutservice.repositories;
+package org.ecom.productservice.repositories;
 
-import org.ecom.prodcutservice.entities.Product;
+import org.ecom.productservice.entities.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

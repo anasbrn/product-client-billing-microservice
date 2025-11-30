@@ -10,6 +10,6 @@
 #                - Path= /customers/**
 #
 #            - id: r2
-#              uri: lb://PRODCUT-SERVICE
+#              uri: lb://PRODUCT-SERVICE
 #              predicates:
 #                - Path= /products/**

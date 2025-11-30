@@ -1,4 +1,4 @@
-package org.ecom.prodcutservice.entities;
+package org.ecom.productservice.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

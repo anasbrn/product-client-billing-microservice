@@ -1,17 +1,17 @@
-package org.ecom.prodcutservice;
+package org.ecom.productservice;
 
-import org.ecom.prodcutservice.entities.Product;
-import org.ecom.prodcutservice.repositories.ProductRepo;
+import org.ecom.productservice.entities.Product;
+import org.ecom.productservice.repositories.ProductRepo;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class ProdcutServiceApplication {
+public class ProductServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ProdcutServiceApplication.class, args);
+        SpringApplication.run(ProductServiceApplication.class, args);
     }
 
     @Bean

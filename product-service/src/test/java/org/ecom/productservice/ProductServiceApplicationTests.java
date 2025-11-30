@@ -1,10 +1,10 @@
-package org.ecom.prodcutservice;
+package org.ecom.productservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProdcutServiceApplicationTests {
+class ProductServiceApplicationTests {
 
     @Test
     void contextLoads() {
