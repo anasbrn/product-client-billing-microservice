@@ -15,6 +15,5 @@ public class ProductRequest {
     @NotNull
     @Positive
     private Double price;
-    @NotNull
     private MultipartFile image;
 }

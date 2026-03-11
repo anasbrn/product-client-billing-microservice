@@ -8,6 +8,7 @@ import org.ecom.productservice.repositories.ProductRepo;
 import org.ecom.productservice.requests.ProductRequest;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.List;
 
 @Service
@@ -15,7 +16,7 @@ import java.util.List;
 public class ProductServiceImpl implements ProductService {
     private final ProductRepo productRepo;
     private ProductMapper productMapper;
-    private FileStorageService fileStorageService;
+    private S3Service s3Service;
 
     @Override
     public List<ProductDto> getAll() {
@@ -23,8 +24,8 @@ public class ProductServiceImpl implements ProductService {
         return products.stream().map(productMapper::toDto).toList();
     }
 
-    public Product create(ProductRequest request) {
-        String imgPath = fileStorageService.upload(request.getImage(), "products/");
+    public Product create(ProductRequest request) throws IOException {
+        String imgPath = s3Service.upload(request.getImage(), "products");
         Product product = productMapper.toEntity(request);
         product.setImgPath(imgPath);
 

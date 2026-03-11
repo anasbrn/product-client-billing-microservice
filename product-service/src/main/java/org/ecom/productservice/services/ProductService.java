@@ -1,6 +1,6 @@
 package org.ecom.productservice.services;
 
-import org.ecom.productservice.dtos.ProductDto;
+import org.ecom.productservice.dtos.request.ProductDto;
 
 import java.util.List;
 
